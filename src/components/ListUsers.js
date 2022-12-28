@@ -32,6 +32,18 @@ export default class ListUsers extends Component {
   }
   clickDelete = (id) => {
     this.props.handerDelete(id)
+    let listUsers = this.props.listUsers;
+    let allPage = Math.ceil(listUsers.length / this.state.reOfPage);
+    this.setState({
+      AllPage : allPage
+    })
+    if(this.state.curpage > allPage){
+      this.setState({
+        curpage : allPage-1
+      })
+    }
+    
+
   }
   clickSave = () => {
     let user = {
