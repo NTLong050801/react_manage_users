@@ -79,7 +79,7 @@ export default class ListUsers extends Component {
   }
 
   render() {
-    let listUsers = this.props.listUsers
+    let listUsers = this.props.listUsers.reverse()
     let { firstName, lastName, email, reOfPage, curpage} = this.state;
 
     let AllPage = Math.ceil(listUsers.length / reOfPage)

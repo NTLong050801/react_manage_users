@@ -26,7 +26,7 @@ function App() {
               <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <NavLink className="nav-link " activeClassName='active' aria-current="page" to="/#">Home</NavLink>
+                    <NavLink className="nav-link " activeClassName='active' aria-current="page" to="/">Home</NavLink>
                   </li>
                   <li className="nav-item">
                     <NavLink className="nav-link" activeClassName='active ' to="/detail">Detail</NavLink>
@@ -45,12 +45,12 @@ function App() {
         </header>
       </div>
       <Routes>
-        <Route path='/#' element={<ManageUser />} exact />
-        <Route path='/detail' element={<Detail />} exact />
+        <Route path='/' element={<ManageUser />} exact />
+        <Route path='/detail' element={<Detail />}  />
       </Routes>
       <ToastContainer
         position="top-right"
-        autoClose={3000}
+        autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
