@@ -32,16 +32,16 @@ export default class ListUsers extends Component {
   }
   clickDelete = (id) => {
     this.props.handerDelete(id)
-    let listUsers = this.props.listUsers;
-    let allPage = Math.ceil(listUsers.length / this.state.reOfPage);
-    this.setState({
-      AllPage : allPage
-    })
-    if(this.state.curpage > allPage){
-      this.setState({
-        curpage : allPage-1
-      })
-    }
+    // let listUsers = this.props.listUsers;
+    // let allPage = Math.ceil(listUsers.length / this.state.reOfPage);
+    // this.setState({
+    //   AllPage : allPage
+    // })
+    // if(this.state.curpage > allPage){
+    //   this.setState({
+    //     curpage : allPage-1
+    //   })
+    // }
     
 
   }
@@ -91,7 +91,7 @@ export default class ListUsers extends Component {
   }
 
   render() {
-    let listUsers = this.props.listUsers.reverse()
+    let listUsers = this.props.listUsers
     let { firstName, lastName, email, reOfPage, curpage} = this.state;
 
     let AllPage = Math.ceil(listUsers.length / reOfPage)
