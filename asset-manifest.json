@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.css": "./static/css/main.33f792ee.css",
-    "main.js": "./static/js/main.feab3425.js",
+    "main.css": "./static/css/main.2090d263.css",
+    "main.js": "./static/js/main.33b5ec88.js",
     "static/js/787.45554548.chunk.js": "./static/js/787.45554548.chunk.js",
+    "static/media/wp6.jpg": "./static/media/wp6.835f5dddf87f587d8869.jpg",
+    "static/media/wp9.jpg": "./static/media/wp9.782b42ecee99596eff49.jpg",
+    "static/media/wp1.jpg": "./static/media/wp1.05be73a82e2330a68cfd.jpg",
+    "static/media/wp8.jpg": "./static/media/wp8.b9e7536c2a2c3735afc0.jpg",
+    "static/media/wp10.jpg": "./static/media/wp10.a9bf74a364753dedbd89.jpg",
+    "static/media/wp4.jpg": "./static/media/wp4.93b760c0c8b167913eaa.jpg",
+    "static/media/wp11.jpg": "./static/media/wp11.a4d1b9189c562bc51817.jpg",
+    "static/media/wp2.jpg": "./static/media/wp2.57d45b8a0b165825b4ac.jpg",
+    "static/media/wp7.jpg": "./static/media/wp7.648a592eeb9af57aba12.jpg",
+    "static/media/work6.jpg": "./static/media/work6.e5be39c3cf72588f0fe7.jpg",
+    "static/media/wp3.jpg": "./static/media/wp3.546f2d5c895f044d657e.jpg",
     "index.html": "./index.html",
-    "main.33f792ee.css.map": "./static/css/main.33f792ee.css.map",
-    "main.feab3425.js.map": "./static/js/main.feab3425.js.map",
+    "main.2090d263.css.map": "./static/css/main.2090d263.css.map",
+    "main.33b5ec88.js.map": "./static/js/main.33b5ec88.js.map",
     "787.45554548.chunk.js.map": "./static/js/787.45554548.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33f792ee.css",
-    "static/js/main.feab3425.js"
+    "static/css/main.2090d263.css",
+    "static/js/main.33b5ec88.js"
   ]
 }
