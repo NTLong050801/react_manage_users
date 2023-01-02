@@ -5,12 +5,24 @@ const initState = {
 
     ]
     ,
+    loginCheck : true,
+    blogs : [
+        {id : 1 , title : "Japan Today" , author : "Long Nguyen" , content : "Shares began the year mixed on Monday, with most markets closed for New Year holidays. \r\nThis week brings employment data and minutes from the latest meeting of the Federal Reserve as it battles infl… [+4225 chars]", img : 'https://mdbootstrap.com/img/new/standard/nature/023.jpg' },
+        {id : 2 , title : "Viet Nam Today" , author : "Long " , content : "Shares began the year mixed on Monday, as it battles infl… [+4225 chars]", img : 'https://mdbootstrap.com/img/new/standard/nature/023.jpg' }
+
+    ]
+        
+    
  
 
 }
 
 const rootReducer = (state = initState, action) => {
     switch (action.type) {
+        case "LOGIN_SUCCESS":
+            return {
+                ...state,loginCheck : false
+            }
         case "RECEIVE_DATA":
             let listUsers = action.payload;
             return {
@@ -45,7 +57,13 @@ const rootReducer = (state = initState, action) => {
             return {
                 ...state,listUsers:[...ListU]
             }
-           
+        case "CREATE_BLOG":
+            let blog = action.blog;
+            console.log(blog)
+            return {
+
+                ...state, blogs: [...state.blogs,blog]
+            }
         default:
             return state;
     }

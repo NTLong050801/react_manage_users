@@ -9,3 +9,22 @@ img{
   text-align: center;
   width: 50%;
 }
+.login{
+ margin-top: 10%;
+//  justify-content: center;
+
+  position: relative;
+  .img_logo{
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: 0 !important;
+    z-index: 2;
+    border-radius: 20%;
+  }
+
+}
+.card-text{
+  height: 100px;
+  overflow: hidden;
+}
